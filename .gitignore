@@ -45,3 +45,12 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+StockAnalysis/ipch/stockanlysis-27fd1614/stockanalysis_srv2012d-23f524b7.ipch
+StockAnalysis/ipch/stockanlysis-27fd1614/stockanalysis_srv2012d-5b279859.ipch
+StockAnalysis/ipch/stockanlysis-27fd1614/stockanalysis_srv2012d-64091851.ipch
+*.opensdf
+*.sdf
+*.user
+*.suo
+*.htm
+*.XML
