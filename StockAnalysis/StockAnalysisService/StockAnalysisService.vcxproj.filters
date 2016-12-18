@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{411f7962-068c-4eab-a4a3-1c3a3994aaa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{adf34ed2-684d-4100-8c7f-9a098e175631}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StockAnalysisService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\Algorithm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\BOLLLine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\Break20WeekKLine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\BreakAllMAs.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\CalculateCrossMA.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\CalculateCrossMACD.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\calculatestrategythread.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\Configuration.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\crossMA_result_reader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\crossmacdstrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\CrossMALine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\CrossMAStrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\CrossWeekLineStrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\CSpreadSheet.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\ema.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\finacealgo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\GetMALine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\GetWeekLine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\HistoryDataDownloader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\HistoryDataLoader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\HttpDownloader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\indicator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\instrumentmanager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\macd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\macdstrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\maline.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\MAStrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\MonthLine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\NewHighPrice.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\Product.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\ProductDataLoader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\QuanAnalyzer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\QuotationReceiver.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\reboundstrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\statresultfile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\StockAnalyst.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\StockDataStructures.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\Strategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\strategycalculator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\TheLargestGain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\TrendMACrossStrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\TrendMALine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\TrendStrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\TurnPoint.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\VolumeCrossStrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\VolumeMALine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\weekline.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\ZSDataLoader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Utilities\FrameworkCls.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Utilities\Utilities.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\TushareDataLoader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StockAnlysis\MAOffsetStrategy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StockAnalysisService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\Algorithm.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\BOLLLine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\Break20WeekKLine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\BreakAllMAs.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\CalculateCrossMA.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\CalculateCrossMACD.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\calculatestrategythread.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\Configuration.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\crossMA_result_reader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\crossmacdstrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\CrossMALine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\CrossMAStrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\CrossWeekLineStrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\CSpreadSheet.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\ema.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\financealgo.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\GetMALine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\GetWeekLine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\HistoryDataDownloader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\HistoryDataLoader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\HttpDownloader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\indicator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\instrumentmanager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\macd.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\macdstrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\maline.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\MAStrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\MonthLine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\NewHighPrice.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\Product.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\ProductDataLoader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\qa_msgno.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\QuanAnalyzer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\QuotationReceiver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\reboundstrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\statresultfile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\StockAnalyst.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\StockDataStructures.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\Strategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\strategycalculator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\TheLargestGain.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\TrendMACrossStrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\TrendMALine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\TrendStrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\TurnPoint.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\VolumeCrossStrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\VolumeMALine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\weekline.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\ZSDataLoader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Utilities\FrameworkCls.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Utilities\Utilities.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\TushareDataLoader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StockAnlysis\MAOffsetStrategy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="StockAnalysisService.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

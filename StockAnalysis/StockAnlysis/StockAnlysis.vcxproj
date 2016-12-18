@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D4EBDCF6-7962-4AC3-A46E-5B0A18A3F509}</ProjectGuid>
+    <RootNamespace>StockAnlysis</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>StockAnalysis</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\Stock\bin\</OutDir>
+    <IntDir>..\..\..\Stock\bin\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_SRV2012D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\ta-lib\c\include;..\..\Utilities;C:\Boost\include\boost-1_59;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ta_libc_csd.lib;ta_libc_cmd.lib;ta_libc_cdd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Stock\bin\$(ProjectName)_SRV2012D.exe</OutputFile>
+      <AdditionalLibraryDirectories>E:\Quan\ta-lib\c\lib;C:\Boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Quan\Utilities;C:\Boost\include\boost-1_59;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>E:\Quan\bin\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\Boost\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Algorithm.cpp" />
+    <ClCompile Include="BOLLLine.cpp" />
+    <ClCompile Include="Break20WeekKLine.cpp" />
+    <ClCompile Include="BreakAllMAs.cpp" />
+    <ClCompile Include="CalculateCrossMA.cpp" />
+    <ClCompile Include="CalculateCrossMACD.cpp" />
+    <ClCompile Include="calculatestrategythread.cpp" />
+    <ClCompile Include="ConfigDlg.cpp" />
+    <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="crossMA_result_reader.cpp" />
+    <ClCompile Include="CrossMALine.cpp" />
+    <ClCompile Include="CSpreadSheet.cpp" />
+    <ClCompile Include="DlgMAEditor.cpp" />
+    <ClCompile Include="DlgProgress.cpp" />
+    <ClCompile Include="DlgQuotLegend.cpp" />
+    <ClCompile Include="DlgStrategyEditor.cpp" />
+    <ClCompile Include="DlgStrategyResult.cpp" />
+    <ClCompile Include="ema.cpp" />
+    <ClCompile Include="finacealgo.cpp" />
+    <ClCompile Include="..\..\Utilities\FrameworkCls.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HistoryDataDownloader.cpp" />
+    <ClCompile Include="HistoryDataLoader.cpp" />
+    <ClCompile Include="HttpDownloader.cpp" />
+    <ClCompile Include="indicator.cpp" />
+    <ClCompile Include="instrumentmanager.cpp" />
+    <ClCompile Include="KLineDlg.cpp" />
+    <ClCompile Include="macd.cpp" />
+    <ClCompile Include="macdstrategy.cpp" />
+    <ClCompile Include="maline.cpp" />
+    <ClCompile Include="MAOffsetStrategy.cpp" />
+    <ClCompile Include="MAStrategy.cpp" />
+    <ClCompile Include="MonthLine.cpp" />
+    <ClCompile Include="NewHighPrice.cpp" />
+    <ClCompile Include="Product.cpp" />
+    <ClCompile Include="ProductDataLoader.cpp" />
+    <ClCompile Include="QuanAnalyzer.cpp" />
+    <ClCompile Include="QuotationReceiver.cpp" />
+    <ClCompile Include="statresultfile.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StockAnalyst.cpp" />
+    <ClCompile Include="StockAnlysis.cpp" />
+    <ClCompile Include="StockAnlysisDlg.cpp" />
+    <ClCompile Include="StockDataStructures.cpp" />
+    <ClCompile Include="Strategy.cpp" />
+    <ClCompile Include="strategycalculator.cpp" />
+    <ClCompile Include="StrategyFactory.cpp" />
+    <ClCompile Include="TheLargestGain.cpp" />
+    <ClCompile Include="TrendMALine.cpp" />
+    <ClCompile Include="TurnPoint.cpp" />
+    <ClCompile Include="..\..\Utilities\Utilities.cpp" />
+    <ClCompile Include="TushareDataLoader.cpp" />
+    <ClCompile Include="VolumeMALine.cpp" />
+    <ClCompile Include="weekline.cpp" />
+    <ClCompile Include="ZSDataLoader.cpp" />
+    <ClCompile Include="crossmacdstrategy.cpp" />
+    <ClCompile Include="CrossMAStrategy.cpp" />
+    <ClCompile Include="CrossWeekLineStrategy.cpp" />
+    <ClCompile Include="reboundstrategy.cpp" />
+    <ClCompile Include="TrendMACrossStrategy.cpp" />
+    <ClCompile Include="TrendStrategy.cpp" />
+    <ClCompile Include="VolumeCrossStrategy.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="BOLLLine.h" />
+    <ClInclude Include="Break20WeekKLine.h" />
+    <ClInclude Include="BreakAllMAs.h" />
+    <ClInclude Include="CalculateCrossMA.h" />
+    <ClInclude Include="CalculateCrossMACD.h" />
+    <ClInclude Include="calculatestrategythread.h" />
+    <ClInclude Include="ConfigDlg.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="crossMA_result_reader.h" />
+    <ClInclude Include="CrossMALine.h" />
+    <ClInclude Include="CSpreadSheet.h" />
+    <ClInclude Include="DlgMAEditor.h" />
+    <ClInclude Include="DlgProgress.h" />
+    <ClInclude Include="DlgQuotLegend.h" />
+    <ClInclude Include="DlgStrategyEditor.h" />
+    <ClInclude Include="DlgStrategyResult.h" />
+    <ClInclude Include="ema.h" />
+    <ClInclude Include="financealgo.h" />
+    <ClInclude Include="..\..\Utilities\FrameworkCls.h" />
+    <ClInclude Include="HistoryDataDownloader.h" />
+    <ClInclude Include="HistoryDataLoader.h" />
+    <ClInclude Include="HttpDownloader.h" />
+    <ClInclude Include="indicator.h" />
+    <ClInclude Include="instrumentmanager.h" />
+    <ClInclude Include="KLineDlg.h" />
+    <ClInclude Include="macd.h" />
+    <ClInclude Include="maline.h" />
+    <ClInclude Include="MAOffsetStrategy.h" />
+    <ClInclude Include="MonthLine.h" />
+    <ClInclude Include="NewHighPrice.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="ProductDataLoader.h" />
+    <ClInclude Include="qa_msgno.h" />
+    <ClInclude Include="QuanAnalyzer.h" />
+    <ClInclude Include="QuotationReceiver.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="statresultfile.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StockAnalyst.h" />
+    <ClInclude Include="StockAnlysis.h" />
+    <ClInclude Include="StockAnlysisDlg.h" />
+    <ClInclude Include="StockDataStructures.h" />
+    <ClInclude Include="Strategy.h" />
+    <ClInclude Include="strategycalculator.h" />
+    <ClInclude Include="StrategyFactory.h" />
+    <ClInclude Include="TheLargestGain.h" />
+    <ClInclude Include="TrendMALine.h" />
+    <ClInclude Include="TurnPoint.h" />
+    <ClInclude Include="..\..\Utilities\Utilities.h" />
+    <ClInclude Include="TushareDataLoader.h" />
+    <ClInclude Include="VolumeMALine.h" />
+    <ClInclude Include="weekline.h" />
+    <ClInclude Include="ZSDataLoader.h" />
+    <ClInclude Include="crossmacdstrategy.h" />
+    <ClInclude Include="CrossMAStrategy.h" />
+    <ClInclude Include="CrossWeekLineStrategy.h" />
+    <ClInclude Include="macdstrategy.h" />
+    <ClInclude Include="MAStrategy.h" />
+    <ClInclude Include="reboundstrategy.h" />
+    <ClInclude Include="TrendMACrossStrategy.h" />
+    <ClInclude Include="TrendStrategy.h" />
+    <ClInclude Include="VolumeCrossStrategy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\StockAnlysis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="StockAnlysis.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\StockAnlysis.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="StockAnlysis.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

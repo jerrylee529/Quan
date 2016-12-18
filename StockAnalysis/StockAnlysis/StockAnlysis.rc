@@ -1,0 +1,560 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\StockAnlysis.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\StockAnlysis.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StockAnlysis"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "StockAnlysis Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_STOCKANLYSIS_DIALOG DIALOGEX 0, 0, 518, 315
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "宽客分析"
+MENU IDR_MENU_MAIN
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "上海A股",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,12,13,45,10
+    CONTROL         "深圳A股",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,57,13,45,10
+    CONTROL         "中小板",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,102,13,40,10
+    CONTROL         "创业板",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,142,13,40,10
+    CONTROL         "自选板块",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,12,26,48,10
+    CONTROL         "指数",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,57,26,27,10
+    EDITTEXT        IDC_EDIT_CODE,101,25,47,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "搜索",IDC_BTN_SEARCH,151,24,21,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,44,179,209
+    GROUPBOX        "",IDC_STATIC,7,3,180,37
+END
+
+IDD_DIALOG_KLINE DIALOGEX 0, 0, 440, 241
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_HSCROLL
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_CONFIG_DLG DIALOGEX 0, 0, 340, 254
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,225,233,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,283,233,50,14
+    LTEXT           "短均线:",IDC_STATIC,19,97,28,8
+    EDITTEXT        IDC_EDIT1,52,94,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "长均线:",IDC_STATIC,19,121,28,8
+    EDITTEXT        IDC_EDIT2,52,118,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "趋势策略",IDC_STATIC,15,148,311,37
+    LTEXT           "阀值",IDC_STATIC,23,164,17,8
+    EDITTEXT        IDC_EDIT3,45,162,59,14,ES_AUTOHSCROLL
+    LTEXT           "止损点(%):",IDC_STATIC,126,97,40,8
+    EDITTEXT        IDC_EDIT4,169,94,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "保护均线:",IDC_STATIC,126,120,36,8
+    EDITTEXT        IDC_EDIT5,169,117,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,14,4,311,82
+    LTEXT           "历史数据路径",IDC_STATIC,24,18,49,8
+    LTEXT           "股票代码路径",IDC_STATIC,24,44,49,8
+    LTEXT           "数据保存路径",IDC_STATIC,24,68,49,8
+    EDITTEXT        IDC_EDIT_HIST_PATH,75,15,223,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_HIST_PATH,299,15,20,14
+    EDITTEXT        IDC_EDIT_INS_PATH,75,41,223,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_INS_PATH,299,41,20,14
+    EDITTEXT        IDC_EDIT_SAVE_PATH,75,65,223,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SAVE_PATH,299,65,20,14
+END
+
+IDD_DLG_CHART DIALOGEX 0, 0, 341, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TCHART1,"{CC0427C7-2124-4770-8847-F9EF4C50CDC2}",WS_TABSTOP,7,7,327,177
+END
+
+IDD_DLG_QUOT_LEGEND DIALOGEX 0, 0, 165, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "行情"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_PROGRESS DIALOGEX 0, 0, 258, 29
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "进度"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,201,7,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER | 0x1,7,7,186,14
+END
+
+IDD_DLG_RESULT DIALOGEX 0, 0, 386, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_MA DIALOGEX 0, 0, 143, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "均线"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_MA,7,7,128,153,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,49,169,41,14
+    EDITTEXT        IDC_EDIT_MA,7,169,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,93,169,41,14
+END
+
+IDD_DIALOG_RESULT DIALOGEX 0, 0, 439, 263
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "策略过滤结果"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_RESULT,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,425,249
+END
+
+IDD_DLG_STRATEGY DIALOGEX 0, 0, 165, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择策略"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,108,179,50,14
+    LISTBOX         IDC_LIST1,7,7,151,170,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CYCLE,7,180,51,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "StockAnlysis.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "StockAnlysis.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_STOCKANLYSIS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 511
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+    END
+
+    IDD_DIALOG_KLINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_CONFIG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_DLG_CHART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_DLG_QUOT_LEGEND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DLG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 22
+    END
+
+    IDD_DLG_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG_MA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DIALOG_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 432
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_DLG_STRATEGY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_CHART DLGINIT
+BEGIN
+    IDC_TCHART1, 0x376, 1603, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x540b, 0x6843, 0x7261, 0x4374, 0x6168, 
+0x7472, 0x0400, 0x654c, 0x7466, 0x1402, 0x5403, 0x706f, 0x2a02, 0x5705, 
+0x6469, 0x6874, 0xeb03, 0x0601, 0x6548, 0x6769, 0x7468, 0x2003, 0x2101, 
+0x6142, 0x6b63, 0x6157, 0x6c6c, 0x422e, 0x7572, 0x6873, 0x472e, 0x6172, 
+0x6964, 0x6e65, 0x2e74, 0x6944, 0x6572, 0x7463, 0x6f69, 0x076e, 0x670b, 
+0x4264, 0x746f, 0x6f74, 0x546d, 0x706f, 0x4220, 0x6361, 0x576b, 0x6c61, 
+0x2e6c, 0x7242, 0x7375, 0x2e68, 0x7247, 0x6461, 0x6569, 0x746e, 0x452e, 
+0x646e, 0x6f43, 0x6f6c, 0x0772, 0x6307, 0x576c, 0x6968, 0x6574, 0x4222, 
+0x6361, 0x576b, 0x6c61, 0x2e6c, 0x7242, 0x7375, 0x2e68, 0x7247, 0x6461, 
+0x6569, 0x746e, 0x532e, 0x6174, 0x7472, 0x6f43, 0x6f6c, 0x0472, 0xeaea, 
+0x00ea, 0x421f, 0x6361, 0x576b, 0x6c61, 0x2e6c, 0x7242, 0x7375, 0x2e68, 
+0x7247, 0x6461, 0x6569, 0x746e, 0x562e, 0x7369, 0x6269, 0x656c, 0x1409, 
+0x6142, 0x6b63, 0x6157, 0x6c6c, 0x542e, 0x6172, 0x736e, 0x6170, 0x6572, 
+0x746e, 0x0f08, 0x6f46, 0x746f, 0x462e, 0x6e6f, 0x2e74, 0x6f43, 0x6f6c, 
+0x0772, 0x6306, 0x426c, 0x756c, 0x0e65, 0x6f46, 0x746f, 0x462e, 0x6e6f, 
+0x2e74, 0x614e, 0x656d, 0x0706, 0x6556, 0x6472, 0x6e61, 0x1261, 0x7247, 
+0x6461, 0x6569, 0x746e, 0x442e, 0x7269, 0x6365, 0x6974, 0x6e6f, 0x0b07, 
+0x6467, 0x6f42, 0x7474, 0x6d6f, 0x6f54, 0x1170, 0x7247, 0x6461, 0x6569, 
+0x746e, 0x452e, 0x646e, 0x6f43, 0x6f6c, 0x0772, 0x6307, 0x576c, 0x6968, 
+0x6574, 0x4711, 0x6172, 0x6964, 0x6e65, 0x2e74, 0x694d, 0x4364, 0x6c6f, 
+0x726f, 0xea04, 0xeaea, 0x1300, 0x7247, 0x6461, 0x6569, 0x746e, 0x532e, 
+0x6174, 0x7472, 0x6f43, 0x6f6c, 0x0472, 0xeaea, 0x00ea, 0x4710, 0x6172, 
+0x6964, 0x6e65, 0x2e74, 0x6956, 0x6973, 0x6c62, 0x0965, 0x4c0e, 0x6665, 
+0x5774, 0x6c61, 0x2e6c, 0x6f43, 0x6f6c, 0x0472, 0xffff, 0x00e0, 0x520f, 
+0x6769, 0x7468, 0x6157, 0x6c6c, 0x432e, 0x6c6f, 0x726f, 0xff04, 0xe0ff, 
+0x0f00, 0x6954, 0x6c74, 0x2e65, 0x6f46, 0x746e, 0x4e2e, 0x6d61, 0x0665, 
+0x5607, 0x7265, 0x6164, 0x616e, 0x5412, 0x7469, 0x656c, 0x542e, 0x7865, 
+0x2e74, 0x7453, 0x6972, 0x676e, 0x0173, 0x0806, 0x6554, 0x4365, 0x6168, 
+0x7472, 0x1500, 0x6f42, 0x7474, 0x6d6f, 0x7841, 0x7369, 0x412e, 0x6978, 
+0x2e73, 0x6f43, 0x6f6c, 0x0472, 0x4040, 0x0040, 0x4215, 0x746f, 0x6f74, 
+0x416d, 0x6978, 0x2e73, 0x7247, 0x6469, 0x432e, 0x6c6f, 0x726f, 0xa904, 
+0xa9a9, 0x2100, 0x6f42, 0x7474, 0x6d6f, 0x7841, 0x7369, 0x4c2e, 0x6261, 
+0x6c65, 0x4673, 0x726f, 0x616d, 0x2e74, 0x6f46, 0x746e, 0x4e2e, 0x6d61, 
+0x0665, 0x5607, 0x7265, 0x6164, 0x616e, 0x421b, 0x746f, 0x6f74, 0x416d, 
+0x6978, 0x2e73, 0x6954, 0x6b63, 0x4973, 0x6e6e, 0x7265, 0x432e, 0x6c6f, 
+0x726f, 0xa904, 0xa9a9, 0x1a00, 0x6f42, 0x7474, 0x6d6f, 0x7841, 0x7369, 
+0x542e, 0x7469, 0x656c, 0x462e, 0x6e6f, 0x2e74, 0x614e, 0x656d, 0x0706, 
+0x6556, 0x6472, 0x6e61, 0x1461, 0x6544, 0x7470, 0x4168, 0x6978, 0x2e73, 
+0x7841, 0x7369, 0x432e, 0x6c6f, 0x726f, 0x4004, 0x4040, 0x1400, 0x6544, 
+0x7470, 0x4168, 0x6978, 0x2e73, 0x7247, 0x6469, 0x432e, 0x6c6f, 0x726f, 
+0xa904, 0xa9a9, 0x2000, 0x6544, 0x7470, 0x4168, 0x6978, 0x2e73, 0x614c, 
+0x6562, 0x736c, 0x6f46, 0x6d72, 0x7461, 0x462e, 0x6e6f, 0x2e74, 0x614e, 
+0x656d, 0x0706, 0x6556, 0x6472, 0x6e61, 0x1a61, 0x6544, 0x7470, 0x4168, 
+0x6978, 0x2e73, 0x6954, 0x6b63, 0x4973, 0x6e6e, 0x7265, 0x432e, 0x6c6f, 
+0x726f, 0xa904, 0xa9a9, 0x1900, 0x6544, 0x7470, 0x4168, 0x6978, 0x2e73, 
+0x6954, 0x6c74, 0x2e65, 0x6f46, 0x746e, 0x4e2e, 0x6d61, 0x0665, 0x5607, 
+0x7265, 0x6164, 0x616e, 0x4417, 0x7065, 0x6874, 0x6f54, 0x4170, 0x6978, 
+0x2e73, 0x7841, 0x7369, 0x432e, 0x6c6f, 0x726f, 0x4004, 0x4040, 0x1700, 
+0x6544, 0x7470, 0x5468, 0x706f, 0x7841, 0x7369, 0x472e, 0x6972, 0x2e64, 
+0x6f43, 0x6f6c, 0x0472, 0xa9a9, 0x00a9, 0x4423, 0x7065, 0x6874, 0x6f54, 
+0x4170, 0x6978, 0x2e73, 0x614c, 0x6562, 0x736c, 0x6f46, 0x6d72, 0x7461, 
+0x462e, 0x6e6f, 0x2e74, 0x614e, 0x656d, 0x0706, 0x6556, 0x6472, 0x6e61, 
+0x1d61, 0x6544, 0x7470, 0x5468, 0x706f, 0x7841, 0x7369, 0x542e, 0x6369, 
+0x736b, 0x6e49, 0x656e, 0x2e72, 0x6f43, 0x6f6c, 0x0472, 0xa9a9, 0x00a9, 
+0x441c, 0x7065, 0x6874, 0x6f54, 0x4170, 0x6978, 0x2e73, 0x6954, 0x6c74, 
+0x2e65, 0x6f46, 0x746e, 0x4e2e, 0x6d61, 0x0665, 0x5607, 0x7265, 0x6164, 
+0x616e, 0x4c13, 0x6665, 0x4174, 0x6978, 0x2e73, 0x7841, 0x7369, 0x432e, 
+0x6c6f, 0x726f, 0x4004, 0x4040, 0x1300, 0x654c, 0x7466, 0x7841, 0x7369, 
+0x472e, 0x6972, 0x2e64, 0x6f43, 0x6f6c, 0x0472, 0xa9a9, 0x00a9, 0x4c1f, 
+0x6665, 0x4174, 0x6978, 0x2e73, 0x614c, 0x6562, 0x736c, 0x6f46, 0x6d72, 
+0x7461, 0x462e, 0x6e6f, 0x2e74, 0x614e, 0x656d, 0x0706, 0x6556, 0x6472, 
+0x6e61, 0x1961, 0x654c, 0x7466, 0x7841, 0x7369, 0x542e, 0x6369, 0x736b, 
+0x6e49, 0x656e, 0x2e72, 0x6f43, 0x6f6c, 0x0472, 0xa9a9, 0x00a9, 0x4c18, 
+0x6665, 0x4174, 0x6978, 0x2e73, 0x6954, 0x6c74, 0x2e65, 0x6f46, 0x746e, 
+0x4e2e, 0x6d61, 0x0665, 0x5607, 0x7265, 0x6164, 0x616e, 0x4c10, 0x6765, 
+0x6e65, 0x2e64, 0x6f46, 0x746e, 0x4e2e, 0x6d61, 0x0665, 0x5607, 0x7265, 
+0x6164, 0x616e, 0x4c1a, 0x6765, 0x6e65, 0x2e64, 0x6853, 0x6461, 0x776f, 
+0x542e, 0x6172, 0x736e, 0x6170, 0x6572, 0x636e, 0x0279, 0x1400, 0x6952, 
+0x6867, 0x4174, 0x6978, 0x2e73, 0x7841, 0x7369, 0x432e, 0x6c6f, 0x726f, 
+0x4004, 0x4040, 0x1400, 0x6952, 0x6867, 0x4174, 0x6978, 0x2e73, 0x7247, 
+0x6469, 0x432e, 0x6c6f, 0x726f, 0xa904, 0xa9a9, 0x2000, 0x6952, 0x6867, 
+0x4174, 0x6978, 0x2e73, 0x614c, 0x6562, 0x736c, 0x6f46, 0x6d72, 0x7461, 
+0x462e, 0x6e6f, 0x2e74, 0x614e, 0x656d, 0x0706, 0x6556, 0x6472, 0x6e61, 
+0x1a61, 0x6952, 0x6867, 0x4174, 0x6978, 0x2e73, 0x6954, 0x6b63, 0x4973, 
+0x6e6e, 0x7265, 0x432e, 0x6c6f, 0x726f, 0xa904, 0xa9a9, 0x1900, 0x6952, 
+0x6867, 0x4174, 0x6978, 0x2e73, 0x6954, 0x6c74, 0x2e65, 0x6f46, 0x746e, 
+0x4e2e, 0x6d61, 0x0665, 0x5607, 0x7265, 0x6164, 0x616e, 0x5412, 0x706f, 
+0x7841, 0x7369, 0x412e, 0x6978, 0x2e73, 0x6f43, 0x6f6c, 0x0472, 0x4040, 
+0x0040, 0x5412, 0x706f, 0x7841, 0x7369, 0x472e, 0x6972, 0x2e64, 0x6f43, 
+0x6f6c, 0x0472, 0xa9a9, 0x00a9, 0x541e, 0x706f, 0x7841, 0x7369, 0x4c2e, 
+0x6261, 0x6c65, 0x4673, 0x726f, 0x616d, 0x2e74, 0x6f46, 0x746e, 0x4e2e, 
+0x6d61, 0x0665, 0x5607, 0x7265, 0x6164, 0x616e, 0x5418, 0x706f, 0x7841, 
+0x7369, 0x542e, 0x6369, 0x736b, 0x6e49, 0x656e, 0x2e72, 0x6f43, 0x6f6c, 
+0x0472, 0xa9a9, 0x00a9, 0x5417, 0x706f, 0x7841, 0x7369, 0x542e, 0x7469, 
+0x656c, 0x462e, 0x6e6f, 0x2e74, 0x614e, 0x656d, 0x0706, 0x6556, 0x6472, 
+0x6e61, 0x0761, 0x6956, 0x6973, 0x6c62, 0x0865, 0x440d, 0x6665, 0x7561, 
+0x746c, 0x6143, 0x766e, 0x7361, 0x0e06, 0x4754, 0x4944, 0x6c50, 0x7375, 
+0x6143, 0x766e, 0x7361, 0x4311, 0x6c6f, 0x726f, 0x6150, 0x656c, 0x7474, 
+0x4965, 0x646e, 0x7865, 0x0d02, 0x0000, 0x0000, 0x0000, 0xff02, 0xffff, 
+"\377" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_LIST MENU 
+BEGIN
+    POPUP "策略"
+    BEGIN
+        POPUP "添加指标"
+        BEGIN
+            MENUITEM "BOLL",                        ID_IND_BOLL
+            MENUITEM "MACD",                        ID_IND_MACD
+            MENUITEM "KDJ",                         ID_IND_KDJ
+            MENUITEM "RSI",                         ID_IND_RSI
+        END
+        POPUP "添加策略"
+        BEGIN
+            MENUITEM "均线交叉策略",                      ID_CAL_MA1
+            MENUITEM "MACD交叉策略",                    ID_CAL_CROSSMACD
+            MENUITEM "顶底策略",                        ID_STRATEGY_MACD
+            MENUITEM "趋势线策略",                       ID_CAL_TREND1
+            MENUITEM "趋势均线交叉",                      ID_CAL_TRENDCROSS
+            MENUITEM "成交量均线交叉",                     ID_CAL_VOLCROSS
+            MENUITEM "均线策略",                        ID_STRATEGY_MA
+            MENUITEM "新高新低策略",                      ID_STRATEGY_NEWHIGHLOW
+            MENUITEM "反弹策略",                        ID_STRATEGY_REBOUND
+            MENUITEM "均线偏移",                        ID_STRTEGY_OFFSET
+        END
+        POPUP "分析周期"
+        BEGIN
+            MENUITEM "日线",                          ID_CYCLE_DAY
+            MENUITEM "周线",                          ID_CYCLE_WEEK
+            MENUITEM "月线",                          ID_CYCLE_MONTH
+        END
+        MENUITEM "编辑均线...",                     ID_MA_ADD
+        MENUITEM SEPARATOR
+        POPUP "运行策略"
+        BEGIN
+            MENUITEM "所有策略",                        ID_STRATEGY_RUN_CROSSMA
+        END
+        POPUP "查看"
+        BEGIN
+            MENUITEM "K线窗口",                        ID_VIEW_KLINE
+            MENUITEM "均线交叉策略结果",                    ID_CROSSMA_RESULT
+        END
+        MENUITEM "导出... ",                      ID_MENU_EXPORT
+    END
+END
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "系统"
+    BEGIN
+        MENUITEM "连接行情",                        ID_MM_RECVQUOT
+        MENUITEM "断开行情",                        ID_MM_STOP_QUOT, INACTIVE
+        MENUITEM SEPARATOR
+        POPUP "导入"
+        BEGIN
+            MENUITEM "均线交叉结果",                      ID_MM_LOAD
+        END
+        MENUITEM "保存...",                       ID_MM_SAVE
+        MENUITEM "设置",                          ID_MM_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                          ID_MM_QUIT
+    END
+    POPUP "策略计算"
+    BEGIN
+        POPUP "策略结果统计"
+        BEGIN
+            MENUITEM "当前板块",                        ID_MM_CAL_STR_CURRENT
+            MENUITEM "选中品种",                        D_MM_CAL_STR_CHOSEN
+            MENUITEM "所有品种",                        D_MM_CAL_STR_ALL
+        END
+    END
+    POPUP "查看"
+    BEGIN
+        MENUITEM "分析窗口",                        ID_MM_WND_ANALYSIS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About StockAnlysis..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\StockAnlysis.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

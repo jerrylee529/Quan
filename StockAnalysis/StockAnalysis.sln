@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StockAnalysis", "StockAnlysis\StockAnlysis.vcxproj", "{D4EBDCF6-7962-4AC3-A46E-5B0A18A3F509}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StockAnalysisService", "StockAnalysisService\StockAnalysisService.vcxproj", "{D35A24FF-E01D-43A5-9A0B-21BF6F0986C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		dummy|Win32 = dummy|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4EBDCF6-7962-4AC3-A46E-5B0A18A3F509}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D4EBDCF6-7962-4AC3-A46E-5B0A18A3F509}.Debug|Win32.Build.0 = Debug|Win32
+		{D4EBDCF6-7962-4AC3-A46E-5B0A18A3F509}.dummy|Win32.ActiveCfg = Debug|Win32
+		{D4EBDCF6-7962-4AC3-A46E-5B0A18A3F509}.dummy|Win32.Build.0 = Debug|Win32
+		{D4EBDCF6-7962-4AC3-A46E-5B0A18A3F509}.Release|Win32.ActiveCfg = Release|Win32
+		{D4EBDCF6-7962-4AC3-A46E-5B0A18A3F509}.Release|Win32.Build.0 = Release|Win32
+		{D35A24FF-E01D-43A5-9A0B-21BF6F0986C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D35A24FF-E01D-43A5-9A0B-21BF6F0986C4}.Debug|Win32.Build.0 = Debug|Win32
+		{D35A24FF-E01D-43A5-9A0B-21BF6F0986C4}.dummy|Win32.ActiveCfg = Debug|Win32
+		{D35A24FF-E01D-43A5-9A0B-21BF6F0986C4}.dummy|Win32.Build.0 = Debug|Win32
+		{D35A24FF-E01D-43A5-9A0B-21BF6F0986C4}.Release|Win32.ActiveCfg = Release|Win32
+		{D35A24FF-E01D-43A5-9A0B-21BF6F0986C4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
