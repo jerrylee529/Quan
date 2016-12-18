@@ -54,3 +54,5 @@ StockAnalysis/ipch/stockanlysis-27fd1614/stockanalysis_srv2012d-64091851.ipch
 *.suo
 *.htm
 *.XML
+*.name
+*.iml
